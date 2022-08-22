@@ -10,8 +10,11 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-  - task: giuliovdev.hugo-extension.hugo-build-task-v2.HugoTask@2
+  - task: Bash@3
     inputs:
-      source: 'gphp'
-      destination: 'build'
-      baseURL: 'guedesplace.ch'
+      targetType: 'inline'
+      script: |
+        # Write your commands here
+        snap install hugo --channel=extended
+        hugo version
+  

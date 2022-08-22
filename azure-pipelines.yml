@@ -10,8 +10,8 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: HugoTask@2
-  inputs:
-    source: 'gphp'
-    destination: 'build'
-    baseURL: 'guedesplace.ch'
+  - task: HugoTask@2
+    inputs:
+      source: 'gphp'
+      destination: 'build'
+      baseURL: 'guedesplace.ch'

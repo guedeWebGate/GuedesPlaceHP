@@ -15,6 +15,6 @@ steps:
       targetType: 'inline'
       script: |
         # Write your commands here
-        snap install hugo --channel=extended
+        sudo snap install hugo --channel=extended
         hugo version
   

@@ -10,7 +10,7 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-  - task: HugoTask@2
+  - task: giuliovdev.hugo-extension.hugo-build-task-v2.HugoTask@2
     inputs:
       source: 'gphp'
       destination: 'build'
